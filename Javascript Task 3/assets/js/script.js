@@ -113,3 +113,48 @@
 // }
 
 
+
+// Dom six 
+
+
+
+// let modal = document.querySelector(".myModal");
+// let modalImg = modal.querySelector(".image img");
+// let modalTitle = document.querySelectorAll(".content p")[1].children[0];
+// let modalclient = document.querySelectorAll(".content p")[2].children[0];
+
+// console.log(modalTitle);
+
+// function openModal(x) {
+//     console.log(x.children[0]);
+//     modalImg.src = x.children[0].src;
+//     modalTitle.innerText = x.nextElementSibling.children[0].innerText;
+//     modalclient.innerText = x.nextElementSibling.children[1].innerText;
+//     modal.style.display = "block";
+// }
+
+// function closeModal() {
+//     modal.style.display = "none";
+// }
+
+
+
+// Dom seven 
+
+
+
+// function openAccordionMenu(x){
+//     x.parentElement.classList.toggle("active")
+// }
+
+
+
+
+
+
+
+
+
+
+
+

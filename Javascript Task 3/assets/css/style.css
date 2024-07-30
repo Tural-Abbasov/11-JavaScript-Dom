@@ -229,3 +229,248 @@ button:hover {
 }
 
 
+
+/* Dom six  */
+
+
+
+ .background{
+  background-color: #f8f9fa;
+}
+
+.mainBoxTwo{
+  height: 1200px;
+  padding-top: 96px;
+}
+
+.textBoxTwo{
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.textBoxTwo h2{
+  font-size: 40px;
+  color: #212529;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;     
+}
+
+.textBoxTwo p{
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 64px;
+  font-style: italic;
+  font-family: "Roboto Slab", serif;
+}
+
+.cardBoxTwo{
+  height: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contentBox{
+  width: calc(33.33% - 15px);
+  height: 420px;
+  background-color: white;
+}
+
+.imageBox{
+  width: 100%;
+  height: 320px;
+  position: relative;
+}
+
+.imageBox>img{
+  width: 100%;
+  height: 100%;
+}
+
+.imageBox::before{
+  content: "\2b";
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  background-color: #FFC800E6;
+  opacity: 0;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  transition: 0.8s;
+  line-height: 320px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+}
+
+.imageBox:hover::before{
+  opacity: 1;
+  text-align: center;
+}
+
+.textBoxThree h4{
+  font-size: 24px;
+  padding-top: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textBoxThree p{
+  font-size: 16px;
+  color: #6c757d;
+  padding-top: 5px;
+  font-family: "Roboto Slab", serif;
+}
+
+.myModal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67,66,66,0.5);
+  position: fixed;
+  z-index: 10;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.modal{
+  width: 97%;
+  height: 100%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 0.4rem;
+  border: 1px solid darkgrey;
+  box-shadow: 2px 2px 3px black,
+  -2px -2px 3px black;
+  animation: modal 0.5s ease-out 1;
+  position: relative;
+}
+
+.closeModal{
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  color: darkgray;
+  font-size: 40px;
+}
+
+.image{
+  width: 600px;
+  margin: 20px auto;
+  height: 350px;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content{
+  width: 40%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 17px;
+}
+
+.content p{
+  color: black;
+  font-weight: 600;
+}
+
+.content p span{
+  font-weight: 400;
+}
+
+.content p:nth-child(1){
+  line-height: 30px;
+  color: rgba(67,66,66,0.7);
+  padding-bottom: 30px;
+}
+
+.content button{
+  width: 300px;
+  height: 80px;
+  background-color: #ffc800;
+  border: none;
+  padding: 20px 0;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+@keyframes modal{
+  from{
+    top:  -200px;
+  }
+  to{
+    top: 0px;
+  }
+}
+@keyframes modal1{
+  from{
+    top:  0px;
+  }
+  to{
+    top: -200px;
+  }
+} 
+
+
+
+/* Dom seven  */
+
+
+
+.accordionMenu{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.accordionMenu ul {
+  list-style: none;
+  font-weight: 700;
+  max-height: 30px;
+  padding: 5px;
+  overflow-y: hidden;
+  cursor: pointer;
+  transition: all .5s linear;
+  margin-bottom: 5px;
+}
+
+.accordion-lists ul.active {
+  max-height: 200px;
+}
+
+.accordion-lists li:not(:first-child) {
+  font-weight: 400;
+  margin-left: 50px;
+}
+
+.accordion-lists li i {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 8px;
+  transition: all .3s linear;
+}
+
+ul.active li>i{
+  transform: rotate(90deg);
+}
+ul.active li:first-of-type{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
